@@ -1,0 +1,215 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #ffffff, rgba(32, 121, 176, 0.541));
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-repeat: no-repeat;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../font/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bebas';
+  src: url(../font/BebasNeue-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lilita';
+  src: url(../font/LilitaOne-Regular.ttf) format('truetype');
+}
+.navbar {
+  overflow: hidden;
+  z-index: 3;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  background:  url('../img/ALMINGO2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: #000000 solid 4px;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+.texto-imagen {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+}
+#titulo {
+  font-size: 110px;
+  color: rgb(230, 230, 230);
+  text-shadow: #000000 2px 2px 5px;
+  animation: slide-in 2s forwards, bounce 2s 1s forwards;
+  font-family: 'Bebas', sans-serif;
+}
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  -webkit-transition: all 1s ease-in-out; /* Safari */
+  transition: all 1s ease-in-out;
+}
+#logo:hover {
+  -webkit-transform: rotate(360deg) scale(1.5); /* Safari */
+  transform: rotate(360deg) scale(1.5);
+}
+.navbar a:hover {
+  color: rgb(0, 225, 255);
+  text-shadow:rgb(133, 133, 133) 1px 1px 4px   ;
+}
+.navbar .icon {
+  display: none;
+}
+footer {
+  background-color: #000000;
+  color: black;
+  width: 100%;
+  height: 15vh;
+  background:  url('../img/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: 2px solid black;
+ 
+}
+footer a {
+  color: black;
+  text-shadow: #ff7f50 1px 1px 1px;  
+  text-decoration: double;
+}
+  #space1 {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 40%;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+  #space1 h3:hover {
+    text-decoration: underline;
+  }
+  #space2 {
+    margin-top: 2px ;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer_text {
+    position: absolute;
+    top: 229.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff7f50;
+    text-shadow: #000000 1px 1px 1px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .navbar a {
+      text-shadow: #000000 5px 1px 1px;
+    }
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 8%;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+    #logo {
+      display: none
+    }
+}
+@media screen and (max-width: 430px) {
+  header {
+    height: 10vh;
+  }
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+      float: right;
+      display: block;
+  }
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 18%;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  #logo {
+    display: none
+  }
+  .texto-imagen {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  #titulo {
+    font-size: 70px;
+  }
+  #estructura {
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+    margin-top: 15%;
+    overflow-y: hidden;
+    flex-direction: column-reverse;
+
+  }
+  #img {
+    width: 100px;
+  }
+ 
+  #text {
+    text-align: justify;
+    margin-right: 10px;
+    text-align: justify;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  footer{
+    border-top: hidden;
+  }
+  #space1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 10px;
+  }
+  .footer_menu {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-top: 10px;
+    border: #000000 2px solid;
+  }
+}

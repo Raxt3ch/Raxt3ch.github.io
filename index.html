@@ -1,69 +1,154 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            background-color: #ffffff;
-            color: #221e1f;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #b9b353;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        #logo {
-            max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #853082;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ALMINGO</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <img id="logo" src="tu_logo.png" alt="Logo de Almingos">
-    </header>
+<header>
+            <div class="navbar" id="myNavbar">
+            <a href="index.html">Home</a>
+            <a href="Bingo.html">Bingo</a>
+            <a href="about.html">About</a>
+            <a id="contact" href="contact.html">Contact</a>
+            <a id="logo" href="index.html"><img id="Logo" src="img/imalogo.png" alt="Logo" style="height:70px;"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script src="prueba.js"></script>
+        <div class="texto-imagen">
+            <h1 id="titulo">ALMINGO</h1>
+            <p id="subtitulo">SOFTWARE AND APP DEVELOPMENT SPECIALIST</p>
+        </div>
+</header>   
+<section>
+<div class="container">
+    <div class="text">
+        <h1>A unique work method that guarantees +150% <br> efficiency</h1>
+        <p>We call it The Helmes Way. For several decades we’ve worked to perfect it. The Helmes Way ensures we
+            build software our customers need to grow their business.
 
-    <div class="content">
-        <!-- Aquí puedes agregar la descripción de tu página -->
-        <p>Descripción de lo que hace nuestra página.</p>
+            Our methods also enable at least 150% efficiency both in delivery and ownership costs compared to
+            other software development outsourcing models.</p>
     </div>
+  
+    <table>
+        <tr>
+            <th><span class="tabla1">Loyalty</span><br>
+                <span class="tabla2">70</span><br>
+                <span class="tabla3">NPS</span></th>
+            <th><span class="tabla1">Improvement</span><br>
+                <span class="tabla2">+150%</span><br>
+                <span class="tabla3">Efficiency</span></th>
+            <th><span class="tabla1">Experience</span><br>
+                <span class="tabla2">31+</span><br>
+                <span class="tabla3">Years</span></th>
+        </tr>
+        <tr>
+            <th><span class="tabla1">Portfolio</span><br>
+                <span class="tabla2">500+</span><br>
+                <span class="tabla3">Customers</span></th>
+            <th><span class="tabla1">Offices</span><br>
+                <span class="tabla2">14</span><br>
+                <span class="tabla3">Locations</span></th>
+            <th><span class="tabla1">People</span><br>
+                <span class="tabla2">1400+</span><br>
+                <span class="tabla3">Experts</span></th>
+        </tr>
+    </table>
+</div>
+<!-- VALORES -->
+    <div>
+        <center>
+         <h2 id="valores">Our culture and values</h2>
+        </center>
+      <div class="valor">
+        <div class="image">
+          <img src="img/colaboracion.png" alt="Imagen 1">
+          <h2>COLABORACION</h2>
+          <p>Novel and adaptive solutions.</p>
+        </div>
+        <div class="image">
+          <img src="img/eficiencia.png" alt="Imagen 2">
+          <h2>EFICIENCIA</h2>
+          <p>Excellent and speedy results.</p>
+        </div>
+        <div class="image">
+          <img src="img/innovacion.png" alt="Imagen 3">
+          <h2>INNOVACION</h2>
+          <p>Vision, knowledge, and trust.</p>
+        </div>
+      </div>
+    </div>
+  <!-- FIN VALORES -->
+    <!-- DESCUENTO -->
+    <div class="image-container">
+        <div id="descuento">
+          <h1>15% OFF</h1>
+          <p>FOR ALL NEW CUSTOMERS</p>
+    </div>
+    <!-- FIN DESCUENTO -->
+    <br><br>
+    <div class="development" id="development1">
+        <div class="development_text">
+          <h2>SOFTWARE DEVELOPMENT</h2>
+          <p>We take pride in offering customized, high-quality software solutions to meet all your business needs. Our team of technology experts excels in a wide range of programming languages, allowing us to adapt to any project, regardless of its complexity or specificity.
 
-    <footer>
-        &copy; 2023 Almingos
-    </footer>
+           What sets us apart from the competition is our dedication to excellence and innovation. We strive to stay up-to-date with the latest trends and technologies in the world of software development. This enables us to provide cutting-edge solutions to our clients that meet current and future standards.
+            
+           <br><br>Additionally, we value open and transparent communication with our clients. We believe that close collaboration is the key to delivering products that not only meet but exceed expectations.
+            
+           <br><br>So, if you're looking for a software development partner that can take your business to the next level, look no further! We are here to turn your ideas into reality. Contact us today!</p>
+        </div>
+        <img class="img" id="img1" src="img/software4.jfif"  alt="">
+    </div>
+    <div class="development" id="development2">
+         <img class="img" id="img2" src="img/apps.jfif"  alt="">
+        <div class="development_text">
+          <h2>APP DEVELOPMENT</h2>
+          <p class="p">In an increasingly digital world, we understand the importance of having a strong mobile presence. Our team of expert app developers is here to help you create engaging and functional mobile applications that will delight your users and give you a competitive edge.
+
+            <br><br>We stand out from the competition due to our versatility and creativity. We master a variety of programming languages and platforms, enabling us to develop applications for iOS, Android, and more. Whether you need a native, hybrid, or cross-platform app, we have the experience and skills to make it happen.
+            
+            Furthermore, we take pride in our user-centric approach. We strive to understand your users and their needs to create applications that are not only visually appealing but also intuitive and user-friendly.
+            
+           <br><br> So, if you're looking to take your business into the mobile world, you're in the right place! Get in touch with us today and discover how we can help you create the perfect app.</p>
+        </div>
+    </div>
+         <!-- FIN SERVICIOS -->
+         <footer>
+          <br>
+          <div id="space1">
+              <div>
+                 <a href="about.html"><h3>ABOUT US</h3></a>
+              </div>
+              <div>
+                  <a href="Bingo.html"><h3>BINGO</h3></a>
+              </div>
+              <div>
+                <a href="contact.html"><h3>CONTACT</h3></a>
+              </div>
+          </div>
+          <hr>
+          <div id="space2">
+              <div>
+                  <select>
+                      <option>ENGLISH</option>
+                  </select>
+              </div>
+              <div>
+                  © 2023 RAXTECH
+              </div>
+          </div>
+      </footer>
+</section>
+
+
 </body>
+
 </html>

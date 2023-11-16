@@ -1,0 +1,25 @@
+
+#estructura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50px;
+    margin-top: 5%;
+    overflow-x: auto;
+  }
+#text {
+    text-align: center;
+    text-align: justify;
+    margin-right: 150px;
+    text-align: justify;
+    margin-left: 60px;
+    font-size: 20px;
+    vertical-align: baseline;
+  }
+#img {
+    width: 500px;
+    border-radius: 50px;
+  }
