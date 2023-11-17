@@ -138,7 +138,6 @@ html, body {
       -webkit-transform: translateY(0);
     }
   }
-  /* Agregar prefijos de proveedores para compatibilidad */
   @-moz-keyframes slide-in {
     0% {
       -moz-transform: translateX(-100%);
